@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swiperefresh">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Fragments.PricelistFragment">
+
+
+
+        <TextView
+            android:id="@+id/prices_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="Prices"
+            android:textColor="@color/bright_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+        />
+
+
+        <LinearLayout
+            android:id="@+id/globallayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/litebackround"
+            android:gravity="center"
+          >
+
+            <ImageView
+                android:id="@+id/bottomarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_bottom_arrow"
+
+
+                />
+
+            <TextView
+                android:id="@+id/globalmarkercap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Global Market Cap : $847,454,432,4234"
+                android:textColor="@color/bright_gray"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/searchbox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_boder"
+            android:backgroundTint="#fafafa"
+            android:elevation="10dp"
+            android:hint="search"
+            android:singleLine="true"
+            android:textColor="@color/bright_gray"
+            android:textColorHint="@color/textcolorlite"
+            android:textSize="15sp"
+         />
+        <LinearLayout
+            android:id="@+id/titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/textcolordark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/textcolordark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/textcolordark"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/linecolorlite"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/currencyrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/listitem" />
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/dashboard"
+        android:title="Prices"
+        android:icon="@drawable/icon_list"
+        android:layout_gravity="center"
+        app:showAsAction="ifRoom"
+        
+        />
+
+    <item
+        android:id="@+id/Favorites"
+        android:title="Favorites"
+        android:icon="@drawable/icon_favorite"
+        android:layout_gravity="center"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        />
+
+
+    <item
+        android:id="@+id/Portfolio"
+        android:title="Portfolio"
+        android:icon="@drawable/icon_graph"
+        android:layout_gravity="center"
+        app:showAsAction="ifRoom"
+        
+        />
+
+
+
+
+    <item
+        android:id="@+id/News"
+        android:title="News"
+        android:icon="@drawable/icon_news"
+        android:layout_gravity="center"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/Invest"
+        android:title="Invest"
+        android:icon="@drawable/icon_invest"
+        android:layout_gravity="center"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>
